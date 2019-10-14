@@ -6,11 +6,13 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.css" type="text/css">
   </head>
   <body id="page-top">
-    <% user = Helpers.current_user(session) %>
-    <h2>Welcome <%= user[:username] %></h2>
-    <h2>Balance: <%= user[:password] %></h2>
-    <form class="" action="/logout" method="post">
-      <input type="submit" name="" value="Logout">
-    </form>
+    <% %>
+      <% user = Helpers.current_user(session) %>
+      <h2>Welcome <%= user[:username] %></h2>
+      <h2>Balance: <%= user[:password] %></h2>
+      <form class="" action="/logout" method="post">
+        <input type="submit" name="" value="Logout">
+      </form>
+    <% end %>
   </body>
 </html>
