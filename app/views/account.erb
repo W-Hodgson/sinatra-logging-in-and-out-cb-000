@@ -9,7 +9,7 @@
     <% if Helpers.is_logged_in?(session) %>
       <% user = Helpers.current_user(session) %>
       <h1>Welcome <%= user[:username] %></h1>
-      <h2>Balance: <%= user[:balance] %></h2>
+      <h3>Balance: <%= user[:balance] %></h3>
       <form class="" action="/logout" method="post">
         <input type="submit" name="" value="Log Out">
       </form>
